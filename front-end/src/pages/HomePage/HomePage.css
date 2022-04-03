@@ -2,7 +2,7 @@
     overflow: auto;
 }
 .product-cards {
-    background-color: #eaeded;
+    background-color: #eaeded3a;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

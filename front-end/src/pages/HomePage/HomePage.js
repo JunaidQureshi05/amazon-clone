@@ -3,7 +3,7 @@ import CarouselComponent from '../../components/CarouselComponent/CarouselCompon
 import ProductCard from '../../components/ProductCard/ProductCard';
 import './HomePage.css';
 import { useEffect } from 'react';
-import { getProducts } from '../../components/actions/productActions';
+import { getProducts } from '../../actions/productActions';
 import { useDispatch, useSelector } from 'react-redux';
 const HomePage = () => {
   const dispatch = useDispatch();

@@ -1,0 +1,11 @@
+.App{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 30px auto 30px;
+}
+
+.Header{
+  position: sticky;
+  top: 0;
+}
+

@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './pages/HomePage/HomePage';
+import ProductPage from './pages/ProductPage/ProductPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/products/:id" element={<ProductPage />} />
           </Routes>
         </Router>
       </div>
