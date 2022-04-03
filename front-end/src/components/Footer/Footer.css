@@ -1,0 +1,20 @@
+.Footer {
+    background-color: #232f3e;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.Footer ul {
+    list-style:none;
+    font-size: 12px;
+    color:#cccccc;
+    display: flex;
+}
+
+.Footer ul li{
+    margin:0 10px
+}
+

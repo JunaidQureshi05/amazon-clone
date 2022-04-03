@@ -1,0 +1,31 @@
+.Product-Card{
+    width: 300px;
+    /* height: 420px; */
+    background-color: white;
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.Product-Card img {
+    width:200px;
+    margin: 0 auto;
+}
+
+.Product-Card .name {
+    font-weight: normal;
+    color:#0F1111 !important;
+    font-size: 28px;
+}
+.price-logo {
+    font-size: 18px;
+    color:grey;
+
+}
+
+.amount{
+    font-size: 22px;
+}

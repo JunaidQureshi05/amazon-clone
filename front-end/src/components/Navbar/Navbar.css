@@ -1,0 +1,17 @@
+.Navbar{
+    background-color: #232f3e;
+    color: white;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 10px ;
+    display: flex;
+}
+
+
+.Navbar div {
+    margin-right: 15px;
+}
+
+.Navbar i {
+    margin-right: 15px;
+}

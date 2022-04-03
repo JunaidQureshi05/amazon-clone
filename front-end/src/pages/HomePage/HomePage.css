@@ -1,0 +1,11 @@
+.HomePage{
+    overflow: auto;
+}
+.product-cards {
+    background-color: #eaeded;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
