@@ -3,26 +3,28 @@ import CarouselComponent from '../../components/CarouselComponent/CarouselCompon
 import ProductCard from '../../components/ProductCard/ProductCard';
 import './HomePage.css';
 import { useEffect } from 'react';
-import { useState } from 'react';
+import { getProducts } from '../../components/actions/productActions';
+import { useDispatch, useSelector } from 'react-redux';
 const HomePage = () => {
-  const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
+  const productList = useSelector((state) => state.productList);
+  const { loading, products } = productList;
   useEffect(() => {
-    const getProducts = async () => {
-      const res = await fetch('/api/products');
-      const data = await res.json();
-      setProducts(data);
-    };
-    getProducts();
+    dispatch(getProducts());
   }, []);
+
   return (
     <div className="HomePage">
       <CarouselComponent />
-
-      <div className="product-cards">
-        {products.map((product) => (
-          <ProductCard {...product} />
-        ))}
-      </div>
+      {loading ? (
+        <h1>Loading</h1>
+      ) : (
+        <div className="product-cards">
+          {products.map((product) => (
+            <ProductCard {...product} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
